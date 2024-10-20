@@ -30,7 +30,7 @@ B.	TECHNICAL SPECIFICATIONS:
 DATABASE:
 Django ORM to interact with the database.
 Models for Products, Categories and Users.
-Each product is associated with a category for better organization (e.g., skincare, haircare, aesthetics.).
+Each product is associated with a category for better organization (e.g., seeds, vegatables, fruits.).
 
 AUTHENTICATION:
 User authentication using Django’s built-in authentication system.
@@ -68,4 +68,3 @@ File Structure:
         ---product_images
     --products
     --product_api
-    
