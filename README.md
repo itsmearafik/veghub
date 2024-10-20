@@ -1,22 +1,22 @@
-This Django E-commerce platform is a marketplace for connecting farmers to consumers. 
-The API is developed using Django REST Framework serving as the backend for managing products on the e-commerce platform, allowing users to create, update, delete, and view products. 
+This Vegatarian E-commerce platform is a marketplace for connecting farmers to consumers. 
+The API is developed using Django REST Framework serving as the backend for managing products on the e-commerce platform, allowing users to create, update, delete, and view products.
 
 
 A.	FUNCTIONALITIES 
 
-PRODUCT MANAGEMENT (CRUD):
+PRODUCT MANAGEMENT (Create, Read, Update, Delete):
 Users have the ability to Create, Read, Update, and Delete (CRUD) products.
 Each product has the following attributes: Name, Description, Price, Category, Stock Quantity, Image, and Created By and Created Date.
 Validation is required to update fields like Price, Name, and Stock Quantity.
 
-USERS MANAGEMENT (CRUD):
+USERS MANAGEMENT (Create, Read, Update, Delete):(CRUD):
 CRUD operations for users who manage the products.
 A user has a unique Username, Email, and Password.
 Only authenticated users can be able to manage products (i.e., create, update, delete).
 
 PRODUCT SEARCH:
 Endpoint to search for products by Name or Category.
-Partial matches in product names for flexible search results.
+Partial matches in product names for flexible search results to increase user experience.
 Pagination for search results to improve performance when there are many products.
 
 PRODUCT VIEW:
@@ -43,7 +43,7 @@ RESTful principles by using appropriate HTTP methods (GET, POST, PUT, DELETE).
 User friendly error handling, returning appropriate HTTP status codes for various actions (e.g., 404 for not found, 400 for bad request).
 
 DEPLOYMENT:
-Project deployed on https://pythonanywhere.com platform
+Project deployed on https://itsmearafik.pythonanywhere.com platform
 
 
 C.  FUTURE GOALS 
@@ -52,4 +52,20 @@ Product Reviews: To allow users to submit reviews and ratings for products and a
 
 Stock Management: Implement an automatic stock reduction system when a user “purchases” a product (or mark it as reserved).
 
-AI Models: To provide analysis and recommendation capabilities.
+AI Models: To provide analysis and recommendation capabilities to increase sales and also keep users engaged by providing more them with more value.
+
+Customer Support: Implement a customer support feature to create a close feed loop back, so as to get user feedback as quick as possible and also address their issues in a timely and professional manner.
+
+
+File Structure:
+
+-VegHub
+    --veghub
+    --core
+    --conversation
+    --dashboard
+    --media
+        ---product_images
+    --products
+    --product_api
+    
